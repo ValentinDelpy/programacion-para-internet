@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Valentin Simon Alain Delpy - Objetivos</title>
+</head>
+<body>
+<form action="form.html" method="POST">
+    <h1>Formulario para capturar metas a corto y mediano plazo</h1>
+    <label for="meta">Meta :</label>
+    <input type='text' name='meta' id="meta">
+    <br>
+    <label for="descripcion">Descripcion :</label>
+    <textarea name='descripcion' id='descripcion' rows="10" cols="30" placeholder="Escribe la descripcion"></textarea>
+    <br>
+    <label for="plazo">Plazo :</label>
+    <select type="select" id="plazo" name="plazo">
+        <option value="uno">1</option>
+        <option value="tres">3</option>
+        <option value="cinco">5</option>
+        <option value="diez">10</option>
+    </select>
+    <br>
+    <label for="radiobtn">Es indispensable:</label>
+    <input type="radio" name="radiobtn" value="si">SI
+    <input type="radio" name="radiobtn" value="no">NO
+    <br>
+    <label for="antes">Antes de la carrera</label>
+    <input type="checkbox" name="antes" id="antes" value="antes"><br>
+    <label for="durante">Durante la carrera</label>
+    <input type="checkbox" name="durante" id="durante" value="durante"><br>
+    <label for="despues">Despues de la carrera</label>
+    <input type="checkbox" name="despues" id="despues" value="despues">
+    <br>
+    <label for="codigo">Codigo:</label>
+    <input type="password" pattern="([1-9]?[0-9]?)+(\,[0-9][0-9]?)?" maxlength='4' id="codigo" name="codigo">
+    <br>
+    <input type="submit" name="submit" value="Crear meta">
+</form>
+</body>
+</html>
